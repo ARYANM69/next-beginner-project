@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
-
+export const runtime = "edge";
 export default function Home() {
   const [value, setValue] = useState("");
   const { push } = useRouter();
@@ -35,3 +35,4 @@ export default function Home() {
     </div>
   );
 }
+
